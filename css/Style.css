@@ -1,10 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f5f5dc;
     color: #333;
 }
-
+.tamaño {
+    width: 120px; 
+    height: auto; 
+}
 header {
     background-color: #ff6f61;
     color: #fff;
@@ -30,9 +33,15 @@ li {
 a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    background-color: #f5f5dc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
 }
-
+a:hover{
+    background-color: #ff6f61;
+}
 section {
     margin: 20px;
     padding: 20px;
