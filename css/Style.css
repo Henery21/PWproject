@@ -142,7 +142,14 @@ width: 260px;
     background-color: #ff6f61; 
 }
 /* fin reservar*/
-
+/*imas*/
+.ima{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+/*fin imas*/
 /** aqui va lo del tama;o  hay qeu agregarle lo del movil*/
 @media (max-width: 768px) {
     nav ul li {
