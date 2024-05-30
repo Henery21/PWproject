@@ -9,18 +9,25 @@
 </head>
 <body>
     <header>
-        <img class="tamaño" src="/css/imas/logoAna's.jpg" alt="Logo-Ana'sFoodShop">             
+        <img class="tamaño" src="/css/imas/logoAna's.jpg" alt="Logo-Ana'sFoodShop">
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a onclick="hideMenu()" href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#Reservaciones">Reservaciones</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    
+   </header>
+   <button class="btnMenu" id="verMenuBtn" onclick="toggleMenu()">Ver Menú</button>
+<span id="menu" class="hidden">
+    <ul>
+        <li>Plato 1</li>
+        <li>Plato 2</li>
+        <li>Plato 3</li>
+    </ul>
+</span>  
     <section id="inicio">
         <h2>Bienvenidos a nuestra Tienda de Comida</h2>
         <p>Disfruta de los mejores platillos locales e internacionales en un solo lugar.</p>
@@ -95,5 +102,6 @@
     <footer>
         <p>© 2024 Tienda de Comida de Ana. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/progra.js"></script>
 </body>
 </html>
