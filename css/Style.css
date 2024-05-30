@@ -56,6 +56,9 @@ border: none;
 cursor: pointer;
 z-index: 1000;
  }
+ .btnMenu:hover{
+    background-color: #ff6f61;
+ }
  #menu {
     display: none;
 }
@@ -63,6 +66,7 @@ z-index: 1000;
 .hidden {
     display: none;
 }
+
 section {
     margin: 20px;
     padding: 20px;
@@ -77,13 +81,69 @@ footer {
     background-color: #333;
     color: white;
 }
+/*Resrovar*/
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    color: #f5f5dc;
 
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
+.formulario{
+    width: calc(50% -20px);
+    padding: 20px;
+    border: 3px solid #ff6f61;
+    border-radius: 20px;
+    background-color: #ff6f61;
+}
+.mapa{
+    width: calc(50% - 20px);
+    padding: 20px;  
+}
+.formulario form{
+padding: 20px;
+border: 1px solid #f5f5dc;
+border-radius: 10px;
+width: 260px;
+}
+.formulario label{
+    margin-bottom: 10px;
+    color: #f5f5dc;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="date"],
+.formulario input[type="number"],
+.formulario textarea{
+    width: calc(100% - 12);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc ;
+    border-radius: 5px;
+}
+.formulario textarea{
+    height: 100px;
+    width: 240px;
+}
+.formulario input[type="Submit"]{
+    background-color: #f5f5dc;
+    color: #ff6f61;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+.formulario input[type= "submit"]:hover{
+    background-color: #ff6f61;
+}
+#Reservaciones {
+    background-color: #ff6f61; 
+}
+/* fin reservar*/
 
+/** aqui va lo del tama;o  hay qeu agregarle lo del movil*/
 @media (max-width: 768px) {
     nav ul li {
         display: block;
