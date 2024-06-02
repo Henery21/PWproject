@@ -98,14 +98,45 @@
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Visítanos o llámanos a través de los siguientes medios:</p>
-        <ul>
-            <li>Dirección: Calle Falsa 123, Ciudad, País</li>
-            <li>Teléfono: +00 123 456 789</li>
-            <li>Email: contacto@tiendadecomida.com</li>
-        </ul>
+        <div class="contacto-info">
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-phone-alt"></i>
+                <p>Teléfono: +00 123 456 789</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p>Email: <a href="mailto:contacto@tiendadecomida.com">contacto@tiendadecomida.com</a></p>
+            </div>
+        </div>
+    
+        <form action="#" method="post" class="formulario-contacto">
+            <h3>Envíanos un mensaje</h3>
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="campo">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <div class="campo enviar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
     </section>
-
+    
     <footer>
         <p>© 2024 Tienda de Comida de Ana. Todos los derechos reservados.</p>
     </footer>
