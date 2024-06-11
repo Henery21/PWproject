@@ -6,11 +6,6 @@ body {
     color: #333;
 }
 
-.tamaño {
-    width: 120px; 
-    height: auto; 
-}
-
 /* Estilos de encabezado */
 header {
     background-color: #ff6f61;
@@ -73,11 +68,7 @@ a:last-child {
 }
 
 /* Estilos del menú desplegable */
-#menu {
-    display: none;
-}
-
-.hidden {
+#menu, .hidden {
     display: none;
 }
 
@@ -102,7 +93,7 @@ footer {
     color: white;
 }
 
-/* Estilos para la sección de reservaciones */
+/* Estilos específicos para secciones */
 .contenedor {
     display: flex;
     justify-content: space-between;
@@ -111,50 +102,39 @@ footer {
     color: #f5f5dc;
 }
 
-.formulario {
+.formulario, .mapa {
     width: calc(50% - 20px);
     padding: 20px;
+}
+
+.formulario {
     border: 3px solid #ff6f61;
     border-radius: 20px;
     background-color: #ff6f61;
-}
-
-.mapa {
-    width: calc(50% - 20px);
-    padding: 20px;  
 }
 
 .formulario form {
     padding: 20px;
     border: 1px solid #f5f5dc;
     border-radius: 10px;
-    width: 260px;
 }
 
-.formulario label {
+.formulario label, .formulario input, .formulario textarea, .formulario input[type="submit"] {
     margin-bottom: 10px;
-    color: #f5f5dc;
 }
 
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario input[type="tel"],
-.formulario input[type="date"],
-.formulario input[type="number"],
-.formulario textarea {
-    width: calc(100% - 12);
+.formulario input[type="text"], .formulario input[type="email"], .formulario input[type="tel"], .formulario input[type="date"], .formulario input[type="number"], .formulario textarea {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .formulario textarea {
     height: 100px;
-    width: 240px;
 }
 
-.formulario input[type="Submit"] {
+.formulario input[type="submit"] {
     background-color: #f5f5dc;
     color: #ff6f61;
     padding: 10px 20px;
@@ -163,13 +143,8 @@ footer {
     cursor: pointer;    
 }
 
-.formulario input[type= "submit"]:hover {
+.formulario input[type="submit"]:hover {
     background-color: #ff6f61;
-}
-
-/* Estilos específicos para la sección de reservaciones */
-#Reservaciones {
-    background-color: #ff6f61; 
 }
 
 /* Estilos específicos para la sección de inicio */
@@ -190,7 +165,6 @@ footer {
 .ima {
     max-width: 600px;
     height: auto;
-    display: block;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -204,13 +178,13 @@ footer {
 #inicio p {
     background-color: #ff6f61;
     max-width: 600px;
-    height: auto;
-    margin-top: 20px;
+    margin: 20px auto;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px;
 }
+
 /* Estilos para la sección de contacto */
 #contacto {
     background-color: #f5f5dc;
@@ -254,9 +228,7 @@ footer {
     margin-bottom: 5px;
 }
 
-.campo input[type="text"],
-.campo input[type="email"],
-.campo textarea {
+.campo input[type="text"], .campo input[type="email"], .campo textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -280,7 +252,6 @@ footer {
     background-color: #e25e4a;
 }
 
-
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     nav ul li {
@@ -292,5 +263,21 @@ footer {
     header, section, footer {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario, .mapa {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btnMenu {
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
     }
 }
