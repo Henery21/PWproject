@@ -26,11 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const navMenu = document.getElementById('nav-menu');
 
     hamburger.addEventListener('click', function () {
-        if (navMenu.style.display === 'block') {
+        if (navMenu.style.display === 'flex') {
             navMenu.style.display = 'none';
         } else {
-            navMenu.style.display = 'block';
+            navMenu.style.display = 'flex';
         }
     });
 });
-
