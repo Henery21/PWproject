@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANA'S FOOD SHOP</title>
     <link rel="stylesheet" href="css/Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>ANA'S FOOD SHOP</title>
+    <link rel="icon" href="css/imas/logoAna's.jpg" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <img class="tamaño" src="/css/imas/logoAna's.jpg" alt="Logo-Ana'sFoodShop">
+        <img class="tamaño" src="/css/imas/logoAna's.jpg" alt="Logo de Ana's Food Shop">
         <nav>
             <ul>
                 <li><a onclick="hideMenu()" href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#Reservaciones">Reservaciones</a></li>
+                <li><a href="#reservaciones">Reservaciones</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-   </header>
-   <button class="btnMenu" id="verMenuBtn" onclick="toggleMenu()">Ver Menú</button>
-   <span id="menu" class="hidden">
-       <ul>
-           <li>Plato 1</li>
-           <li>Plato 2</li>
-           <li>Plato 3</li>
-       </ul>
-   </span>
-   
-   <section id="inicio">
-    <h2>🌟 ¡Bienvenidos a ANA'S FOOD SHOP! 🌟</h2>
-    <div class="intro-container">
-        <p>Sumérgete en una experiencia culinaria incomparable donde los sabores locales e internacionales se fusionan para deleitar tu paladar. Descubre una amplia selección de los mejores platillos cuidadosamente preparados para satisfacer todos tus antojos. Desde clásicos de la cocina local hasta delicias internacionales, cada bocado te transportará a un viaje gastronómico único. Ven y disfruta de la calidad y el sabor en su máxima expresión, todo en un solo lugar: Ana's Food Shop.</p>
-        <hr>
-    </div>
-    <div class="image-container">
-        <div class="images">
-            <img class="ima" src="/css/imas/imagen1.jpg" alt="comidaAna'sFoodShop">
-            <img class="ima" src="/css/imas/ima2.jpg" alt="comidaAna'sFoodShop">
-            <img class="ima" src="/css/imas/desayuno.jpg" alt="comidaAna'sFoodShop">
-        </div>
-    </div>
-</section>
+    </header>
 
-    
-    <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una tienda comprometida con la calidad y la frescura de nuestros productos.</p>
-    </section>
+    <button class="btnMenu" id="verMenuBtn" onclick="toggleMenu()">Ver Menú</button>
+    <div id="menu" class="hidden">
+        <ul>
+            <li>Plato 1</li>
+            <li>Plato 2</li>
+            <li>Plato 3</li>
+        </ul>
+    </div>
 
-    <section id="Reservaciones">
-        <div class="contenedor">
-            <div class="formulario">
-                <h2>Reservaciones</h2>
-                <p>Complete el siguiente formulario para realizar una reservación:</p>
-                
-                <form action="#" method="post">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br>
-                    
-                    <label for="correo">Correo electrónico:</label><br>
-                    <input type="email" id="correo" name="correo" required><br>
-                    
-                    <label for="telefono">Teléfono:</label><br>
-                    <input type="tel" id="telefono" name="telefono" required><br>
-                    
-                    <label for="fecha">Fecha de reserva:</label><br>
-                    <input type="date" id="fecha" name="fecha" required><br>
-                    
-                    <label for="personas">Número de personas:</label><br>
-                    <input type="number" id="personas" name="personas" min="1" required><br>
-                    
-                    <label for="mensaje">Mensaje adicional:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
-                    
+    <main>
+        <section id="inicio">
+            <h2>🌟 ¡Bienvenidos a ANA'S FOOD SHOP! 🌟</h2>
+            <div class="intro-container">
+                <p>Sumérgete en una experiencia culinaria incomparable donde los sabores locales e internacionales se fusionan para deleitar tu paladar. Descubre una amplia selección de los mejores platillos cuidadosamente preparados para satisfacer todos tus antojos. Desde clásicos de la cocina local hasta delicias internacionales, cada bocado te transportará a un viaje gastronómico único. Ven y disfruta de la calidad y el sabor en su máxima expresión, todo en un solo lugar: Ana's Food Shop.</p>
+                <hr>
+            </div>
+            <div class="image-container">
+                <img class="ima" src="/css/imas/imagen1.jpg" alt="Plato 1 de Ana's Food Shop">
+                <img class="ima" src="/css/imas/ima2.jpg" alt="Plato 2 de Ana's Food Shop">
+                <img class="ima" src="/css/imas/desayuno.jpg" alt="Desayuno en Ana's Food Shop">
+            </div>
+        </section>
+
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una tienda comprometida con la calidad y la frescura de nuestros productos.</p>
+        </section>
+
+        <section id="reservaciones">
+            <div class="contenedor">
+                <div class="formulario">
+                    <h2>Reservaciones</h2>
+                    <p>Complete el siguiente formulario para realizar una reservación:</p>
+                    <form action="#" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        
+                        <label for="fecha">Fecha de reserva:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                        
+                        <label for="personas">Número de personas:</label>
+                        <input type="number" id="personas" name="personas" min="1" required>
+                        
+                        <label for="mensaje">Mensaje adicional:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                        
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.48004530038!2d-74.00627297032488!3d40.712775868896585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25904ceeb2b69%3A0xbdc4ec30b0362b81!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1620759415204!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-container">
+                <article>
+                    <h3>Producto 1</h3>
+                    <img class="tamaño" src="/css/imas/desayuno.jpg" alt="Descripción del producto 1">
+                    <p>Descripción breve del producto 1.</p>
+                </article>
+                <article>
+                    <h3>Producto 2</h3>
+                    <img src="/css/imas/imagen2.jpg" alt="Descripción del producto 2">
+                    <p>Descripción breve del producto 2.</p>
+                </article>
+                <!-- Agrega más productos según sea necesario -->
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-info">
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Teléfono: +00 123 456 789</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: <a href="mailto:contacto@tiendadecomida.com">contacto@tiendadecomida.com</a></p>
+                </div>
+            </div>
+            <form action="#" method="post" class="formulario-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="campo enviar">
                     <input type="submit" value="Enviar">
-                </form>
-            </div>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.48004530038!2d-74.00627297032488!3d40.712775868896585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25904ceeb2b69%3A0xbdc4ec30b0362b81!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1620759415204!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-    
-    <section id="productos">
-        <h2>Nuestros Productos</h2>
-        <div>
-            <article>
-                <h3>Producto 1</h3>
-                <img class="tamaño"  src="/css/imas/desayuno.jpg" alt="Descripción del producto 1">
-                <p>Descripción breve del producto 1.</p>
-            </article>
-            <article>
-                <h3>Producto 2</h3>
-                <img src="images/producto2.jpg" alt="Descripción del producto 2">
-                <p>Descripción breve del producto 2.</p>
-            </article>
-            <!-- Agrega más productos según sea necesario -->
-        </div>
-    </section>
+                </div>
+            </form>
+        </section>
+    </main>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-info">
-            <div class="info">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-            </div>
-            <div class="info">
-                <i class="fas fa-phone-alt"></i>
-                <p>Teléfono: +00 123 456 789</p>
-            </div>
-            <div class="info">
-                <i class="fas fa-envelope"></i>
-                <p>Email: <a href="mailto:contacto@tiendadecomida.com">contacto@tiendadecomida.com</a></p>
-            </div>
-        </div>
-    
-        <form action="#" method="post" class="formulario-contacto">
-            <h3>Envíanos un mensaje</h3>
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="campo">
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
-            <div class="campo">
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" required>
-            </div>
-            <div class="campo">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            </div>
-            <div class="campo enviar">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-    </section>
-    
     <footer>
         <p>© 2024 Tienda de Comida de Ana. Todos los derechos reservados.</p>
     </footer>
+    
     <script src="js/progra.js"></script>
 </body>
+
 </html>
