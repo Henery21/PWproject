@@ -18,3 +18,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// js/menu.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function () {
+        if (navMenu.style.display === 'block') {
+            navMenu.style.display = 'none';
+        } else {
+            navMenu.style.display = 'block';
+        }
+    });
+});
+
