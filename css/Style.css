@@ -4,13 +4,14 @@ body {
     padding: 0;
     background-color: #f5f5dc;
     color: #333;
+    font-family: Arial, sans-serif;
 }
 
 /* Estilos de encabezado */
 header {
     background-color: #ff6f61;
     color: #fff;
-    padding: 10px 20px;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -19,7 +20,7 @@ nav {
     position: fixed;
     left: 0;
     top: 0;
-    padding: 20px;
+    padding: 1.25rem;
     z-index: 1000;
 }
 
@@ -29,17 +30,17 @@ ul {
 }
 
 li {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 a {
     text-decoration: none;
     color: black;
     background-color: #f5f5dc;
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.25rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 a:hover {
@@ -53,11 +54,11 @@ a:last-child {
 /* Estilos del botón del menú */
 .btnMenu {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
     background-color: #f5f5dc;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.25rem;
     border: none;
     cursor: pointer;
     z-index: 1000;
@@ -74,11 +75,11 @@ a:last-child {
 
 /* Estilos de las secciones */
 section {
-    margin: 20px;
-    padding: 20px;
+    margin: 1.25rem;
+    padding: 1.25rem;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
 }
 
 section:hover {
@@ -88,7 +89,7 @@ section:hover {
 /* Estilos del pie de página */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     background-color: #333;
     color: white;
 }
@@ -96,50 +97,52 @@ footer {
 /* Estilos específicos para secciones */
 .contenedor {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
     color: #f5f5dc;
 }
 
 .formulario, .mapa {
-    width: calc(50% - 20px);
-    padding: 20px;
+    flex: 1 1 calc(50% - 1.25rem);
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .formulario {
-    border: 3px solid #ff6f61;
-    border-radius: 20px;
+    border: 0.1875rem solid #ff6f61;
+    border-radius: 1.25rem;
     background-color: #ff6f61;
 }
 
 .formulario form {
-    padding: 20px;
-    border: 1px solid #f5f5dc;
-    border-radius: 10px;
+    padding: 1.25rem;
+    border: 0.0625rem solid #f5f5dc;
+    border-radius: 0.625rem;
 }
 
 .formulario label, .formulario input, .formulario textarea, .formulario input[type="submit"] {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .formulario input[type="text"], .formulario input[type="email"], .formulario input[type="tel"], .formulario input[type="date"], .formulario input[type="number"], .formulario textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
 }
 
 .formulario textarea {
-    height: 100px;
+    height: 6.25rem;
 }
 
 .formulario input[type="submit"] {
     background-color: #f5f5dc;
     color: #ff6f61;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;    
 }
 
@@ -153,7 +156,7 @@ footer {
 }
 
 #inicio h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .image-container {
@@ -163,11 +166,11 @@ footer {
 }
 
 .ima {
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -177,62 +180,62 @@ footer {
 
 #inicio p {
     background-color: #ff6f61;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 /* Estilos para la sección de contacto */
 #contacto {
     background-color: #f5f5dc;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .contacto-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .info {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-align: center;
 }
 
 .info i {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
 }
 
 .formulario-contacto {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
 }
 
 .formulario-contacto h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .campo {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .campo label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
 }
 
 .campo textarea {
@@ -243,8 +246,8 @@ footer {
     background-color: #ff6f61;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
     cursor: pointer;
 }
 
@@ -252,17 +255,17 @@ footer {
     background-color: #e25e4a;
 }
 
-/* Estilos para dispositivos móviles */
+/* Estilos responsivos */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
     }
 
     header, section, footer {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
     }
 
     .contenedor {
@@ -272,12 +275,12 @@ footer {
 
     .formulario, .mapa {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .btnMenu {
-        top: 10px;
-        right: 10px;
-        padding: 5px 10px;
+        top: 0.625rem;
+        right: 0.625rem;
+        padding: 0.3125rem 0.625rem;
     }
 }
