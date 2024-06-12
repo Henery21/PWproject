@@ -4,29 +4,23 @@ body {
     background-color: #f5f5dc;
     color: #333;
 }
-
 .tamaño {
     width: 120px; 
     height: auto; 
 }
-
-/* Estilos de encabezado */
 header {
     background-color: #ff6f61;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
 }
-
-/* Estilos de navegación */
-nav {
-    position: fixed;
+nav{
+    position:fixed;
     left: 0;
     top: 0;
     padding: 20px;
     z-index: 1000;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -43,36 +37,29 @@ a {
     padding: 5px 20px;
     border-radius: 20px;
     margin-right: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 40px ;
 }
-
-a:hover {
+a:hover{
     background-color: #ff6f61;
 }
-
-a:last-child {
+a:last-child{
     margin-right: 0;
 }
-
-/* Estilos del botón del menú */
-.btnMenu {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #f5f5dc;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.btnMenu:hover {
+.btnMenu{
+position: fixed;
+top: 20px;
+right: 20px;
+background-color: #f5f5dc;
+padding: 10px 20px ;
+border-radius: 20px;
+border: none;
+cursor: pointer;
+z-index: 1000;
+ }
+ .btnMenu:hover{
     background-color: #ff6f61;
-}
-
-/* Estilos del menú desplegable */
-#menu {
+ }
+ #menu {
     display: none;
 }
 
@@ -80,7 +67,6 @@ a:last-child {
     display: none;
 }
 
-/* Estilos de las secciones */
 section {
     margin: 20px;
     padding: 20px;
@@ -88,105 +74,90 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-section:hover {
+section:hover{
     transform: scale(1.002);
 }
 
-/* Estilos del pie de página */
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: white;
 }
-
-/* Estilos para la sección de reservaciones */
-.contenedor {
+/*Resrovar*/
+.contenedor{
     display: flex;
     justify-content: space-between;
     max-width: 800px;
     margin: auto;
     color: #f5f5dc;
-}
 
-.formulario {
-    width: calc(50% - 20px);
+}
+.formulario{
+    width: calc(50% -20px);
     padding: 20px;
     border: 3px solid #ff6f61;
     border-radius: 20px;
     background-color: #ff6f61;
 }
-
-.mapa {
+.mapa{
     width: calc(50% - 20px);
     padding: 20px;  
 }
-
-.formulario form {
-    padding: 20px;
-    border: 1px solid #f5f5dc;
-    border-radius: 10px;
-    width: 260px;
+.formulario form{
+padding: 20px;
+border: 1px solid #f5f5dc;
+border-radius: 10px;
+width: 260px;
 }
-
-.formulario label {
+.formulario label{
     margin-bottom: 10px;
     color: #f5f5dc;
 }
-
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario input[type="tel"],
 .formulario input[type="date"],
 .formulario input[type="number"],
-.formulario textarea {
+.formulario textarea{
     width: calc(100% - 12);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc ;
     border-radius: 5px;
 }
-
-.formulario textarea {
+.formulario textarea{
     height: 100px;
     width: 240px;
 }
-
-.formulario input[type="Submit"] {
+.formulario input[type="Submit"]{
     background-color: #f5f5dc;
     color: #ff6f61;
     padding: 10px 20px;
-    border: none;
+    border:none;
     border-radius: 5px;
     cursor: pointer;    
 }
-
-.formulario input[type= "submit"]:hover {
+.formulario input[type= "submit"]:hover{
     background-color: #ff6f61;
 }
-
-/* Estilos específicos para la sección de reservaciones */
 #Reservaciones {
     background-color: #ff6f61; 
 }
-
-/* Estilos específicos para la sección de inicio */
-#inicio {
+/* fin reservar*/
+/*inicio*/
+#inicio{
     text-align: center;
 }
-
-#inicio h2 {
+#inicio h2{
     margin-bottom: 20px;
 }
-
-.image-container {
+.image-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-.ima {
+.ima{
     max-width: 600px;
     height: auto;
     display: block;
@@ -195,23 +166,21 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-
-.ima:hover {
+.ima:hover{
     transform: scale(1.05);
 }
-
 #inicio p {
     background-color: #ff6f61;
     max-width: 600px;
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* Estilos para dispositivos móviles */
+/*fin inicio*/
+/** aqui va lo del tama;o  hay qeu agregarle lo del movil*/
 @media (max-width: 768px) {
     nav ul li {
         display: block;
