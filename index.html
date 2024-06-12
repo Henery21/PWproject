@@ -8,21 +8,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     </head>
-<body>
-      <!-- Botón de Menú -->
-      <button class="btn btn-primary menu-button" type="button" onclick="toggleMenu()">Menú</button>
+    <body>
+        <!-- Botón de Menú -->
+    <button class="btn btn-primary menu-button" type="button" onclick="toggleMenu()">Menú</button>
     
-      <!-- Lista de Menú -->
-      <div class="menu-list" id="menuList">
-          <ul>
-              <li>Plato 1</li>
-              <li>Plato 2</li>
-              <li>Plato 3</li>
-              <!-- Agrega más platos según sea necesario -->
-          </ul>
-      </div>
-    <!-- Encabezado -->
-    <header class="bg-danger text-white p-3">
+   <!-- Lista de Menú -->
+   <div class="menu-list hidden" id="menuList">
+    <ul class="list-unstyled">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#reservaciones">Reservaciones</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#menu">Menú</a></li>
+    </ul>
+</div>
+
+       <!-- Encabezado -->
+       <header class="bg-danger text-white p-3">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <img class="tamaño" src="/css/imas/logoAna's.jpg" alt="Logo de Ana's Food Shop">
@@ -32,14 +35,16 @@
                     <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#reservaciones">Reservaciones</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#eventos">Eventos</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#menu">Menú</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Sección Inicio -->
+    
+          <!-- Sección Inicio -->
     <section id="inicio">
         <h2>🌟 ¡Bienvenidos a ANA'S FOOD SHOP! 🌟</h2>
         <div class="intro-container">
@@ -54,58 +59,46 @@
             </div>
         </div>
     </section>
-
-    <!-- Sección Nosotros -->
-    <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una tienda comprometida con la calidad y la frescura de nuestros productos.</p>
-    </section>
-
-    <!-- Sección Reservaciones -->
-    <section id="reservaciones">
-        <div class="contenedor">
-            <div class="formulario">
-                <h2>Reservaciones</h2>
-                <p>Complete el siguiente formulario para realizar una reservación:</p>
-                <form action="#" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required><br>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required><br>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required><br>
-                    <label for="fecha">Fecha de reserva:</label>
-                    <input type="date" id="fecha" name="fecha" required><br>
-                    <label for="personas">Número de personas:</label>
-                    <input type="number" id="personas" name="personas" min="1" required><br>
-                    <label for="mensaje">Mensaje adicional:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4"></textarea><br>
-                    <input type="submit" value="Enviar">
-                </form>
+    
+        <!-- Sección Nosotros -->
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una tienda comprometida con la calidad y la frescura de nuestros productos.</p>
+        </section>
+    
+        <!-- Sección Reservaciones -->
+        <section id="reservaciones">
+            <div class="contenedor">
+                <div class="formulario">
+                    <h2>Reservaciones</h2>
+                    <p>Complete el siguiente formulario para realizar una reservación:</p>
+                    <form action="#" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required><br>
+                        <label for="fecha">Fecha de reserva:</label>
+                        <input type="date" id="fecha" name="fecha" required><br>
+                        <label for="personas">Número de personas:</label>
+                        <input type="number" id="personas" name="personas" min="1" required><br>
+                        <label for="mensaje">Mensaje adicional:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"></textarea><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.48004530038!2d-74.00627297032488!3d40.712775868896585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25904ceeb2b69%3A0xbdc4ec30b0362b81!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1620759415204!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.48004530038!2d-74.00627297032488!3d40.712775868896585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25904ceeb2b69%3A0xbdc4ec30b0362b81!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1620759415204!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Productos -->
-    <section id="productos">
-        <h2>Nuestros Productos</h2>
-        <div>
-            <article>
-                <h3>Producto 1</h3>
-                <img class="tamaño" src="/css/imas/desayuno.jpg" alt="Descripción del producto 1">
-                <p>Descripción breve del producto 1.</p>
-            </article>
-            <article>
-                <h3>Producto 2</h3>
-                <img src="images/producto2.jpg" alt="Descripción del producto 2">
-                <p>Descripción breve del producto 2.</p>
-            </article>
-            <!-- Agrega más productos según sea necesario -->
-        </div>
-    </section>
+        </section>
+    
+        <!-- Sección Eventos -->
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <p>Descubre nuestros próximos eventos y promociones especiales.</p>
+        </section>
 
     <!-- Sección Contacto -->
     <section id="contacto">
