@@ -1,100 +1,226 @@
-/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
     background-color: #f5f5dc;
     color: #333;
-    font-family: Arial, sans-serif;
 }
 
-/* Clase para imagen responsiva */
 .tamaño {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 120px; 
+    height: auto; 
 }
 
 /* Estilos de encabezado */
 header {
     background-color: #ff6f61;
     color: #fff;
-    padding: 1rem;
+    padding: 10px 20px;
     text-align: center;
-    position: relative;
 }
 
 /* Estilos de navegación */
 nav {
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 1000;
 }
 
-nav ul {
+ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-direction: row;
 }
 
-nav ul li {
-    margin: 0 1rem;
+li {
+    margin-bottom: 20px;
 }
 
-nav ul li a {
+a {
     text-decoration: none;
     color: black;
     background-color: #f5f5dc;
-    padding: 0.625rem 1.25rem;
-    border-radius: 1.25rem;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
-nav ul li a:hover {
+a:hover {
     background-color: #ff6f61;
 }
 
+a:last-child {
+    margin-right: 0;
+}
+
 /* Estilos del botón del menú */
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    background: none;
+.btnMenu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f5f5dc;
+    padding: 10px 20px;
+    border-radius: 20px;
     border: none;
-    color: #fff;
     cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1001;
+    z-index: 1000;
+}
+
+.btnMenu:hover {
+    background-color: #ff6f61;
 }
 
 /* Estilos del menú desplegable */
-#nav-menu {
-    display: flex;
+#menu {
+    display: none;
 }
 
+.hidden {
+    display: none;
+}
+
+/* Estilos de las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section:hover {
+    transform: scale(1.002);
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos para la sección de reservaciones */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    color: #f5f5dc;
+}
+
+.formulario {
+    width: calc(50% - 20px);
+    padding: 20px;
+    border: 3px solid #ff6f61;
+    border-radius: 20px;
+    background-color: #ff6f61;
+}
+
+.mapa {
+    width: calc(50% - 20px);
+    padding: 20px;  
+}
+
+.formulario form {
+    padding: 20px;
+    border: 1px solid #f5f5dc;
+    border-radius: 10px;
+    width: 260px;
+}
+
+.formulario label {
+    margin-bottom: 10px;
+    color: #f5f5dc;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="date"],
+.formulario input[type="number"],
+.formulario textarea {
+    width: calc(100% - 12);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    height: 100px;
+    width: 240px;
+}
+
+.formulario input[type="Submit"] {
+    background-color: #f5f5dc;
+    color: #ff6f61;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+.formulario input[type= "submit"]:hover {
+    background-color: #ff6f61;
+}
+
+/* Estilos específicos para la sección de reservaciones */
+#Reservaciones {
+    background-color: #ff6f61; 
+}
+
+/* Estilos específicos para la sección de inicio */
+#inicio {
+    text-align: center;
+}
+
+#inicio h2 {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ima {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ima:hover {
+    transform: scale(1.05);
+}
+
+#inicio p {
+    background-color: #ff6f61;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    #nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 3.5rem;
-        right: 1rem;
-        background-color: #ff6f61;
-        border-radius: 8px;
-        width: 200px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
     nav ul li {
-        margin: 1rem 0;
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    header, section, footer {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

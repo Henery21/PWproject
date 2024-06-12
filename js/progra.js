@@ -1,13 +1,15 @@
-/** solo es una idea deberias de porde rhacerlo mejor que yo*/
+// Función para alternar la visibilidad del menú flotante
 function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.toggle("hidden");
+    const menuList = document.getElementById('menuList');
+    menuList.classList.toggle('hidden');
 }
 
+// Función para ocultar el menú flotante
 function hideMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.add("hidden");
+    const menuList = document.getElementById('menuList');
+    menuList.classList.add('hidden');
 }
+
 // JavaScript para el desplazamiento suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -19,17 +21,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// js/menu.js
-
+// Evento para alternar el menú de navegación en dispositivos móviles
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+    const hamburger = document.querySelector('.navbar-toggler');
+    const navMenu = document.getElementById('navbarNav');
 
     hamburger.addEventListener('click', function () {
-        if (navMenu.style.display === 'flex') {
-            navMenu.style.display = 'none';
-        } else {
-            navMenu.style.display = 'flex';
-        }
+        navMenu.classList.toggle('show');
     });
 });
