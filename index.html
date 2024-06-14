@@ -1,156 +1,259 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ANA'S FOOD SHOP</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/Style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Botón de Menú -->
-    <button class="btn btn-primary menu-button" type="button" onclick="toggleMenu()">Menú</button>
-    
-   <!-- Lista de Menú -->
-   <div class="menu-list hidden" id="menuList">
-    <ul class="list-unstyled">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#reservaciones">Reservaciones</a></li>
-        <li><a href="#eventos">Eventos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#menu">Menú</a></li>
-    </ul>
-</div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-       <!-- Encabezado -->
-       <header class="bg-danger text-white p-3">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <img class="tamaño" src="/css/imas/logoAna's.jpg" alt="Logo de Ana's Food Shop">
-            </div>
-            <nav class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#reservaciones">Reservaciones</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#eventos">Eventos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#menu">Menú</a></li>
+    </head> 
+<body>
+
+        <!-- Encabezado -->
+        <header>
+             <!-- Contenedor de la imagen y título -->
+        <div class="logo-container">
+            <!-- Imagen -->
+            <img class="logo" src="css/imas/logoAna's.jpg" alt="Logo">
+            <!-- Título -->
+            <h1>ANA'S FOOD SHOP</h1>
+        </div>
+        <!-- Menú de opciones -->
+        <div class="menu-container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#box5">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-
+        </header>
+<main>
+           <!-- Imagen debajo del menú -->
+    <div class="imagen-debajo-menu">
+        <img src="css/imas/mas.jpg" alt="Descripción de la imagen">
+    </div>
     
-          <!-- Sección Inicio -->
-    <section id="inicio">
-        <h2>🌟 ¡Bienvenidos a ANA'S FOOD SHOP! 🌟</h2>
-        <div class="intro-container">
-            <p>Sumérgete en una experiencia culinaria incomparable donde los sabores locales e internacionales se fusionan para deleitar tu paladar. Descubre una amplia selección de los mejores platillos cuidadosamente preparados para satisfacer todos tus antojos. Desde clásicos de la cocina local hasta delicias internacionales, cada bocado te transportará a un viaje gastronómico único. Ven y disfruta de la calidad y el sabor en su máxima expresión, todo en un solo lugar: Ana's Food Shop.</p>
-            <hr>
+      <!-- Sección Inicio -->
+      <section id="inicio">
+        <div class="container">
+            <!-- Cuadros con imágenes -->
+            <div class="cuadros-container">
+                <!-- Primer cuadro -->
+                <div class="cuadro cuadro-1">
+                    <p>Embárcate en un viaje culinario sin igual: Donde los sabores del mundo se encuentran en una sinfonía de aromas y texturas
+                        ¿Cansado de la monotonía en tu paladar? Te invitamos a descubrir un universo de sensaciones donde la pasión por la cocina se conjuga con la maestría de nuestros chefs para crear experiencias gastronómicas únicas.</p>
+                </div>
+                <!-- Segundo cuadro -->
+                <div class="cuadro cuadro-2">
+                    <h2>¡Bienvenidos a Ana's Food Shop!</h2>
+                    <a href="#menu" class="btn">Ver Menú</a>
+                </div>
+                <!-- Tercer cuadro -->
+                <div class="cuadro cuadro-3">
+                    <!-- Contenido del tercer cuadro -->
+                    <h2>¡la comida, me pone contento! </h2>
+                    <h3>abierto 8:00 am asta 10:00 pm</h3>    
+                </div>
+                <!-- Cuarto cuadro con imagen -->
+                <div class="cuadro cuadro-4">
+                    <img src="css/imas/mas.jpg" alt="Imagen cuadro 4">
+                </div>
+            </div>
         </div>
-        <div class="image-container">
-            <div class="images">
-                <img class="ima" src="/css/imas/imagen1.jpg" alt="Comida de Ana's Food Shop">
-                <img class="ima" src="/css/imas/ima2.jpg" alt="Comida de Ana's Food Shop">
-                <img class="ima" src="/css/imas/desayuno.jpg" alt="Comida de Ana's Food Shop">
+    </section>
+     
+
+    <section id="nosotros">
+        <!-- Barra negra -->
+        <div class="black-bar">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p>En  Anas´s food shop somos un restaurante comprometido con la calidad y la frescura de nuestros ingredientes. La pasión por la cocina se une a la tradición y la innovación para crear experiencias gastronómicas únicas.</p>
+                <p>Nuestra misión es ofrecerte una experiencia gastronómica inolvidable, que despierte tus sentidos y te haga sentir especial  en un ambiente acogedor y familiar.</p>
             </div>
         </div>
     </section>
     
-        <!-- Sección Nosotros -->
-        <section id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos una tienda comprometida con la calidad y la frescura de nuestros productos.</p>
-        </section>
-    
-        <!-- Sección Reservaciones -->
-        <section id="reservaciones">
-            <div class="contenedor">
-                <div class="formulario">
-                    <h2>Reservaciones</h2>
-                    <p>Complete el siguiente formulario para realizar una reservación:</p>
-                    <form action="#" method="post">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required><br>
-                        <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" required><br>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" required><br>
-                        <label for="fecha">Fecha de reserva:</label>
-                        <input type="date" id="fecha" name="fecha" required><br>
-                        <label for="personas">Número de personas:</label>
-                        <input type="number" id="personas" name="personas" min="1" required><br>
-                        <label for="mensaje">Mensaje adicional:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4"></textarea><br>
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.48004530038!2d-74.00627297032488!3d40.712775868896585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25904ceeb2b69%3A0xbdc4ec30b0362b81!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1620759415204!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Sección Eventos -->
-        <section id="eventos">
-            <h2>Eventos</h2>
-            <p>Descubre nuestros próximos eventos y promociones especiales.</p>
-        </section>
+        
+        
+        
+<!-- Sección Menú -->
+<section id="menu">
+    <div class="container">
+        <h2>Nuestro Menú</h2>
 
-    <!-- Sección Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-info">
-            <div class="info">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        <div class="menu-items">
+            <!-- Primer plato -->
+            <div class="menu-item">
+                <img src="css/imas/01.jpg " alt="Plato 1">
+                <div class="item-details">
+                    <h3>Desayunos</h3>
+                    <p>Hot cakes, omelettes, waffles, huevos revueltos, sandwiches.</p>
+                </div>
             </div>
-            <div class="info">
-                <i class="fas fa-phone-alt"></i>
-                <p>Teléfono: +00 123 456 789</p>
+
+            <!-- Segundo plato -->
+            <div class="menu-item">
+                <img src="css/imas/03.jpg" alt="Plato 2">
+                <div class="item-details">
+                    <h3>Bebidas frias</h3>
+                    <p>Jugos, bebidas preparadas, refrescos y sodas.</p>
+                </div>
             </div>
-            <div class="info">
-                <i class="fas fa-envelope"></i>
-                <p>Email: <a href="mailto:contacto@tiendadecomida.com">contacto@tiendadecomida.com</a></p>
+
+            <!-- Tercer plato -->
+            <div class="menu-item">
+                <img src="css/imas/04.jpg" alt="Plato 3">
+                <div class="item-details">
+                    <h3>Entrada</h3>
+                    <p>Variedad de entradas para poder disfrutar: totopos, papas, nachos y mas.</p>
+                </div>
+            </div>
+
+            <!-- Cuarto plato -->
+            <div class="menu-item">
+                <img src="css/imas/cafe.jpg" alt="Plato 4">
+                <div class="item-details">
+                    <h3>Bebidas calientes</h3>
+                    <p>Cafe, leche, té, leche de almendra, atol de elote, ponches, chocholate.</p>
+                </div>
+            </div>
+
+            <!-- Quinto plato -->
+            <div class="menu-item">
+                <img src="css/imas/ima3.jpg" alt="Plato 5">
+                <div class="item-details">
+                    <h3>Banderillas</h3>
+                    <p>banderilla de canes, salchicha, pollo, camarones, mixtas</p>
+                </div>
+            </div>
+
+            <!-- Sexto plato -->
+            <div class="menu-item">
+                <img src="css/imas/07.jpg"alt="Plato 6">
+                <div class="item-details">
+                    <h3>Bebidas alcoholicas</h3>
+                    <p>Mojitos, tragos preparados, cerveza y mas.</p>
+                </div>
+            </div>
+            <!-- Septimo plato -->
+            <div class="menu-item">
+                <img src="css/imas/mas.jpg" alt="Plato 7">
+                <div class="item-details">
+                    <h3>Sopas</h3>
+                    <p>Sopa de pollo, sopa de verduras, sopa de albondiga, sopa de carne.</p>
+                </div>
+            </div>
+            <!-- Octavo plato -->
+            <div class="menu-item">
+                <img src="css/imas/Dules.jpg"  alt="Plato 8">
+                <div class="item-details">
+                    <h3>Postres</h3>
+                    <p>Los mejores postres dulces: Budin, tres leches, relampagos, cup cakes.</p>
+                </div>
             </div>
         </div>
-    
-        <form action="#" method="post" class="formulario-contacto">
-            <h3>Envíanos un mensaje</h3>
-            <div class="campo">
+    </div>
+</section>
+
+<!-- Sección Box 1 -->
+<section id="box1">
+    <div class="container">
+        <h2>Unete a nuestra lista de correo y te informaremos</h2>   
+    </div>
+</section>
+
+<!-- Sección Box 2 -->
+<section id="box2">
+    <div class="container">
+        <img src="css/imas/03.jpg" alt="Imagen de ejemplo">
+    </div>
+</section>
+
+<!-- Sección Box 3 -->
+<section id="box3">
+    <div class="container black-box">
+        <h2>Ubicación y horario</h2>
+        <h3>calle inventada de sonsonte</h3>
+        <P>abierto diario de     8:00 a 16:00 </P>
+    </div>
+</section>
+
+<!-- Sección Box 4 -->
+<section id="box4">
+    <div class="container">
+        <div id="mapa" style="width: 400px; height: 400px;"></div>
+    </div>
+</section>
+
+<!-- Sección Box 5 -->
+<section id="box5">
+    <div class="container">
+        <!-- Formulario de reservación -->
+        <div class="reservacion">
+            <h3>Reservaciones</h3>
+            <form action="enviar_reserva.php" method="POST">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="campo">
+
                 <label for="correo">Correo electrónico:</label>
                 <input type="email" id="correo" name="correo" required>
-            </div>
-            <div class="campo">
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" required>
-            </div>
-            <div class="campo">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            </div>
-            <div class="campo enviar">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-    </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 Ana's Food Shop. Todos los derechos reservados.</p>
-    </footer>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-</body>
-</body>
+                <label for="tipo_reserva">Tipo de reserva:</label>
+                <select id="tipo_reserva" name="tipo_reserva" required>
+                    <option value="mesa">Reserva por mesa</option>
+                    <option value="evento">Reserva por evento</option>
+                </select>
+
+                <label for="mensaje">Mensaje adicional:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+
+                <button type="submit" class="btn">Enviar Reserva</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="container">
+        <div class="contact-info">
+            <div class="info-box">
+                <h2>Contacto</h2>
+                <p>Teléfono: +00 123 456 789</p>
+                <p>Email: <a href="mailto:info@anasfoodshop.com">info@anasfoodshop.com</a></p>
+            </div>
+            <div class="info-box">
+                <h2>Conéctate</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="info-box">
+                <h2>Empleo</h2>
+                <p>¿Quieres ser parte del equipo? ¡Envía tu CV!</p>
+            </div>
+        </div>
+        
+        <!-- Derechos Reservados -->
+        <div class="derechos-reservados">
+            <p>&copy; 2024 Ana's Food Shop. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+        <!-- Enlace al archivo JavaScript externo -->
+        <script src="js/progra.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=initMap" async defer></script>
+
+    </body>
 </html>
